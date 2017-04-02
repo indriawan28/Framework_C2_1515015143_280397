@@ -17,6 +17,16 @@
 	.form-horizontal{
 		padding: 15px 10px;
 	}
+
+            .content {
+            	margin-top: 80px;
+                text-align: center;
+                /*display: inline-block;*/
+            }
+
+            .title {
+                font-size: 40px;
+            }
 	footer{
 		padding-top: 15px;
 		text-align: right;
@@ -79,9 +89,18 @@
 			@endif
 			@yield('container')
 			</div>
+
+			<div class="container">
+            	<div class="content">
+                	<div class="title">Welcome to Praktikum Pemograman Framework<br>
+                	Indriawan Niswar</div>
+                	</div>
+                </div>
+            <div>
+
 			<nav class="navbar navbar-default navbar-fixed-bottom">
 				<footer class="container">
-				</i>HijratulAini_1515015122</span></a>
+					created by <a href="https://twitter.com/Ferrymiechell"><span><i class="fa fa-twitter" style"color#1da1f2"></i>Indriawan Niswar</span></a>
 				</footer>
 			</nav>
 			<script type="text/javascript" src="{{asset('component/jquery/dist/jquery.min.js') }}"></script>
