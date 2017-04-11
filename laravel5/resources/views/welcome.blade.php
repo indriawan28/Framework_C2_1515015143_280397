@@ -40,7 +40,7 @@
             <div class="content">
                 <div class="title">Laravel 5</div>
                 <div>
-                    <h3>Indriawan Niswar</h3>
+                    <h3>Indriawan Niswars</h3>
                 </div>
             </div>
         </div>

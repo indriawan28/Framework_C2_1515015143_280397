@@ -11,20 +11,20 @@
 |
 */
 
-Route::get('Jadwal_Matakuliah/tambah','Jadwal_MatakuliahController@tambah');
-Route::get('Jadwal_Matakuliah','Jadwal_MatakuliahController@awal');
+Route::get('jadwal_matakuliah/tambah','Jadwal_matakuliahController@tambah');
+Route::get('jadwal_matakuliah','Jadwal_matakuliahController@awal');
 
-Route::get('Dosen_Matakuliah/tambah','Dosen_MatakuliahController@tambah');
-Route::get('Dosen_Matakuliah','Dosen_MatakuliahController@awal');
+Route::get('dosen_matakuliah/tambah','Dosen_matakuliahController@tambah');
+Route::get('dosen_matakuliah','Dosen_matakuliahController@awal');
 
-Route::get('Ruangan/tambah','RuanganController@tambah');
-Route::get('Ruangan','RuanganController@awal');
+Route::get('ruangan/tambah','RuanganController@tambah');
+Route::get('ruangan','RuanganController@awal');
 
-Route::get('Matakuliah/tambah','MataKuliahController@tambah');
-Route::get('Matakuliah','MataKuliahController@awal');
+Route::get('matakuliah/tambah','MatakuliahController@tambah');
+Route::get('matakuliah','MatakuliahController@awal');
 
-Route::get('Mahasiswa/tambah','MahasiswaController@tambah');
-Route::get('Mahasiswa','MahasiswaController@awal');
+Route::get('mahasiswa/tambah','MahasiswaController@tambah');
+Route::get('mahasiswa','MahasiswaController@awal');
 
 Route::get('dosen/tambah','DosenController@tambah');
 Route::get('dosen','DosenController@awal');
@@ -32,11 +32,11 @@ Route::get('dosen','DosenController@awal');
 Route::get('pengguna/tambah','PenggunaController@tambah');
 Route::get('pengguna','PenggunaController@awal');
 
-Route::get('Pengguna/lihat/{Pengguna}','PenggunaController@lihat');
-Route::post('Pengguna/simpan','PenggunaController@simpan');
-Route::get('Pengguna/edit/{Pengguna}','PenggunaController@edit');
-Route::post('Pengguna/edit/{Pengguna}','PenggunaController@update');
-Route::get('Pengguna/hapus/{Pengguna}','PenggunaController@hapus');
+Route::get('pengguna/lihat/{pengguna}','penggunaController@lihat');
+Route::post('pengguna/simpan','penggunaController@simpan');
+Route::get('pengguna/edit/{pengguna}','penggunaController@edit');
+Route::post('pengguna/edit/{pengguna}','penggunaController@update');
+Route::get('pengguna/hapus/{pengguna}','penggunaController@hapus');
 
 Route::get('MataKuliah/lihat/{MataKuliah}','MataKuliahController@lihat');
 Route::post('MataKuliah/simpan','MataKuliahController@simpan');
@@ -50,11 +50,18 @@ Route::get('Ruangan/edit/{Ruangan}','RuanganController@edit');
 Route::post('Ruangan/edit/{Ruangan}','RuanganController@update');
 Route::get('Ruangan/hapus/{Ruangan}','RuanganController@hapus');
 
+Route::get('mahasiswa/lihat/{mahasiswa}','MahasiswaController@lihat');
+Route::post('mahasiswa/simpan','MahasiswaController@simpan');
+Route::get('mahasiswa/edit/{Mahasiswa}','MahasiswaController@edit');
+Route::post('mahasiswa/edit/{Mahasiswa}','MahasiswaController@update');
+Route::get('mahasiswa/hapus/{Mahasiswa}','MahasiswaController@hapus');
+
+
 
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('master');
 });
 Route::get('pengguna/{pengguna}', function ($pengguna) {
     return "HAI $pengguna";

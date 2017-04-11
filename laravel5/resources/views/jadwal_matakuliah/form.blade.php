@@ -17,3 +17,11 @@
 		{!! Form::select('ruangan_id',$ruangan->lists('title','id'),null,['class'=>'form-control','id'=>'ruangan_id','placeholder'=>"Ruangan"]) !!}	
 	</div>
 </div>
+<!-- $mahasiswa = Mahasiswa::find($id);
+        $mahasiswa->nama = $input->nama;
+        $mahasiswa->nip = $input->nip;
+        $mahasiswa->alamat = $input->alamat;
+        $mahasiswa->pengguna_id = $input->pengguna_id;
+        $informasi = $mahasiswa->save() ? 'Berhasil update data': 'Gagal update data';
+        return redirect ('mahasiswa') -> with (['informasi'=>$informasi]);
+    } -->

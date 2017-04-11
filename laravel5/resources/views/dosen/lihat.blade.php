@@ -6,7 +6,7 @@
 	</div>
 	<table class="table">
 		<tr>
-			<td>Nama</td>
+			<td>Nama Dosen</td>
 			<td>:</td>
 			<td>{{ $dosen->nama }}</td>
 		</tr>
@@ -30,6 +30,7 @@
 			<td>:</td>
 			<td>{{ $dosen->pengguna->password }}</td>
 		</tr>
+
 		<tr>
 			<td class="col-xs-4">Dibuat tanggal</td>
 			<td class="col-cs-1">:</td>
@@ -43,3 +44,8 @@
 	</table>
 </div>
 @stop
+<!-- 
+$dosen->nama = $input->nama;
+    	$dosen->nip = $input->nip;
+    	$dosen->alamat = $input->alamat;
+    	$dosen->pengguna_id = $input->pengguna_id; -->

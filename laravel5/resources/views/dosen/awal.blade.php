@@ -10,20 +10,18 @@
 		<thead>
 			<tr>
 				<th>No.</th>
-				<th>Nama</th>
+				<th>Nama Dosen</th>
 				<th>NIP</th>
-				<th>Alamat</th>
 				<th>Aksi</th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php $x=1; ?>
-			@foreach ($data as $dosen)
+			@foreach ($semuaDosen as $dosen)
 			<tr>
 				<td>{{ $x++}}</td>
-				<td>{{ $dosen->nama or 'nama kosong' }}</td>
-				<td>{{ $dosen->nip or 'nip kosong' }}</td>
-				<td>{{ $dosen->alamat or 'alamat kosong' }}</td>				
+				<td>{{ $dosen->nama or 'Nama Kosong' }}</td>
+				<td>{{ $dosen->nip or 'NIP Kosong' }}</td>
 				<td>
 					<div class="btn-group" role="group">
 						<a href="{{url('dosen/edit/'.$dosen->id)}}" class="btn btn-warning btn-xs" data-toogle="tooltip" data-placement="top" title="Ubah"><i class="fa fa-pencil"></i></a>
@@ -37,3 +35,9 @@
 	</table>
 </div>
 @stop
+
+<!-- 
+$dosen->nama = $input->nama;
+    	$dosen->nip = $input->nip;
+    	$dosen->alamat = $input->alamat;
+    	$dosen->pengguna_id = $input->pengguna_id; -->
